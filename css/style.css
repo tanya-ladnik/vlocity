@@ -1,0 +1,68 @@
+.right {
+	float: right;
+}	
+.item-block{
+	height: 50px;
+}
+ 
+.parent {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.parent > .child {
+  display: table-cell;
+  vertical-align: middle;
+}
+.user-name{
+	padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.form-control{
+	border-radius: 15px;
+}
+.profile-img{
+	border: 2px solid #e3e3e3;
+	padding: 1px;
+}
+
+
+.details button{
+  height: 100px;
+  width: 200px;
+}
+.details .rating{
+  float: left;
+  padding-left:3px; 
+}
+
+.details .low{
+  color: #e7e7e7;
+}
+.details .description{
+  padding: 40px 0 10px ;
+}
+
+
+.parent .glyphicon-play {
+ 	display: none;
+}
+.parent:hover .glyphicon-play {
+ display: block;
+}
+
+.inner-addon {
+  position: relative;
+}
+.inner-addon input {
+  padding: 0 30px 0 30px;    
+}
+.inner-addon span {
+  position: absolute;
+  padding: 10px 12px;
+  pointer-events: none;
+}
+.inner-addon .glyphicon-remove{
+	right: 0px;
+}

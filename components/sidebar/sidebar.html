@@ -1,0 +1,8 @@
+<div class="list-group">
+  <a href="#contacts/{{slugify(item.name)}}" class="list-group-item parent " ng-repeat="item in $ctrl.contacts | filter:$ctrl.search.value">
+    <div class="item-block child">
+    	{{item.name}}
+    	<span class="glyphicon glyphicon-play right"></span>
+    </div>
+  </a>
+</div>

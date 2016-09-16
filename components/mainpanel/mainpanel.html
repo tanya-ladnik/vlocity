@@ -1,0 +1,35 @@
+<div class="details">
+	<div class="row">
+	  <div class="col-md-3">
+	  	<img src="{{data.img}}"></img>
+	  </div>
+	  <div class="col-md-6">
+	  	<button type="button" class="btn btn-default"><h4>Send Message!</h4></button>
+	  	<div ng-repeat="n in [1,2,3,4,5]">		
+	  		<h1><span class="glyphicon glyphicon-heart rating " ng-class="{'low': n > data.rating}"></span></h1>
+	  	</div>
+	  </div>
+	</div>  
+
+	<div class="row">
+	  <div class="col-md-10">
+	  	<div class="description">{{data.Description}}</div>
+			<table class="table table-striped">
+			  <thead class="panel-heading">
+			    <tr>
+			      <th>Likes</th>
+			      <th>Dislikes</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+				  <tr ng-repeat="n in range(data.iteration) track by $index" >
+			      <td>{{data.Likes[$index]}}</td>
+			      <td>{{data.Dislikes[$index]}}</td>
+			    </tr>
+			  </tbody>  
+			</table>
+		</div>
+	</div>
+</div>
+
+
